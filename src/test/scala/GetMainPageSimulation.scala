@@ -20,7 +20,7 @@ class GetMainPageSimulation extends Simulation {
 
   setUp(
 		scn.inject(
-			constantUsersPerSec(50) during(10 seconds)
+			rampUsersPerSec(100) to(1000) during(5 minutes)
 			).protocols(httpConf)
 		)
 }
