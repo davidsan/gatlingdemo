@@ -1,0 +1,5 @@
+# gatlingdemo
+
+```
+sbt gatling:test
+````
